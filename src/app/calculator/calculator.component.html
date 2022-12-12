@@ -1,0 +1,25 @@
+
+<html>
+    <body>
+<table>
+    <tr><h1>Calculadora</h1></tr>
+    <tr>
+      <td>Argumento1</td>
+      <td><input id="argumento1" [(ngModel)]="numero1" type="number" /></td>
+    </tr>
+    <tr>
+        <td>Argumento2</td>
+        <td><input id="argumento2" [(ngModel)]="numero2" type="number" /></td>
+    </tr>
+    <tr>
+        <td><td><input type="button" value="Sumar" (click)="sum()"  /></td>
+        <td><input type="button" value="Restar"  (click)="substract()" /></td>
+        <td><input type="button" value="Multiplicar"  (click)="mult()" /></td>
+    </tr> 
+    <tr>
+        <td>Respuesta</td>
+        <td>{{getResultado()}}</td>
+    </tr>
+</table>
+  </body>
+</html>
